@@ -1,15 +1,19 @@
-<img src="images/user.png">
+<div class="User">
+    <img class="UserPicture" src="../../assets/images/user.png">
 
-<div class="UserName">{{ user.FirstName }} {{ user.SecondName }}</div>
-<div class="Position">{{ user.Position }}</div>
+    <div class="UserInfo">
+        <div class="UserName">{{ user.FirstName }} {{ user.SecondName }}</div>
+        <div class="UserPosition">{{ user.Position }}</div>
+    </div>
 
-<div>
-    <button [disabled]="user.Blocked" (click)="onEditButtonClick()">
-        Edit
-        <img src="images/edit-user.png">
-    </button>
-    <button (click)="onDeleteButtonClick()">
-        Delete
-        <img src="images/delete-user.png">
-    </button>
+    <div class="UserActions">
+        <button [disabled]="user.Blocked" (click)="onEditButtonClick()">
+            Edit
+            <img src="../../assets/images/edit-user.png">
+        </button>
+        <button (click)="onDeleteButtonClick()">
+            Delete
+            <img src="../../assets/images/delete-user.png">
+        </button>
+    </div>
 </div>

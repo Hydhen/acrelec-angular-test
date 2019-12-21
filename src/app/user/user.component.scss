@@ -1,0 +1,38 @@
+.User {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+
+    .UserPicture {
+        display: inline-block;
+        height: 5vw;
+    }
+
+    .UserInfo {
+        display: inline-block;
+
+        .UserName {
+            font-family: "roboto";
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .UserPosition {
+            font-family: "acrelec";
+            font-size: medium;
+            font-style: italic;
+        }
+    }
+
+    .UserActions {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+    }
+}
+
+button {
+    img {
+        height: 2vw;
+    }
+}
