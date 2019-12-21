@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "acrelec";
+    src: url("./assets/fonts/Acrelec.woff") format('woff'),
+         url("./assets/fonts/Acrelec.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
