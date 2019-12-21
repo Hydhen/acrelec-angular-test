@@ -1,3 +1,13 @@
-<div *ngFor="let user of users">
-    <app-user [user]=user></app-user>
+<button (click)="clearLocalStorage()">Clear Local Storage</button>
+
+<input (keyup)="onKeyStroke($event)" />
+
+<div *ngIf="filteredUsers !== undefined">
+    <div *ngFor="let user of filteredUsers">
+        <app-user [user]=user (delete)="deleteUser($event)"></app-user>
+    </div>
+</div>
+
+<div *ngIf="filteredUsers === undefined || filteredUsers.length == 0">
+    No user found
 </div>

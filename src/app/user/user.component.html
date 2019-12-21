@@ -1,5 +1,15 @@
+<img src="images/user.png">
+
 <div class="UserName">{{ user.FirstName }} {{ user.SecondName }}</div>
 <div class="Position">{{ user.Position }}</div>
+
 <div>
-    <button></button>
+    <button [disabled]="user.Blocked" (click)="onEditButtonClick()">
+        Edit
+        <img src="images/edit-user.png">
+    </button>
+    <button (click)="onDeleteButtonClick()">
+        Delete
+        <img src="images/delete-user.png">
+    </button>
 </div>
